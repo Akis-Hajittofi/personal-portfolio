@@ -2,12 +2,12 @@
 import React, { useEffect, useState } from "react";
 
 function Nav() {
-  const [isDark, setIsDark] = useState(
-    JSON.parse(localStorage.getItem("isDark"))
-  );
-  useEffect(() => {
-    localStorage.setItem("isDark", JSON.stringify(isDark));
-  }, [isDark]);
+  //   const [isDark, setIsDark] = useState(
+  //     JSON.parse(localStorage.getItem("isDark"))
+  //   );
+  //   useEffect(() => {
+  //     localStorage.setItem("isDark", JSON.stringify(isDark));
+  //   }, [isDark]);
 
   return (
     <div className="navbar bg-primary text-primary-content">
