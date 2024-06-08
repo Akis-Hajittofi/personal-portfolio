@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 
 function Nav() {
   return (
-    <div className="navbar bg-primary text-primary-content">
+    <div className="navbar bg-base-300 text-base-content">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">Phanakis Hajittofi</a>
+        <a className="btn btn-ghost text-xl ">Phanakis Hajittofi</a>
       </div>
       <div className="flex-none">
         <label className="cursor-pointer grid place-items-center">

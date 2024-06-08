@@ -2,12 +2,11 @@ import React from "react";
 
 function Divider({ text }) {
   return (
-    <div className="flex flex-row w-full p-4 space-x-8">
-      <h2 className="w-fit text-5xl sm:text-6xl font-[1000]">
+    <div className="divider w-full divider-start divider-neutral text-5xl sm:text-6xl font-[1000] p-12 ">
+      <p className="mr-2">
         {text}
         <span className="text-primary">.</span>
-      </h2>
-      <div className="divider w-full self-center divider-neutral pr-0 sm:pr-5"></div>
+      </p>
     </div>
   );
 }
