@@ -2,13 +2,6 @@
 import React, { useEffect, useState } from "react";
 
 function Nav() {
-  //   const [isDark, setIsDark] = useState(
-  //     JSON.parse(localStorage.getItem("isDark"))
-  //   );
-  //   useEffect(() => {
-  //     localStorage.setItem("isDark", JSON.stringify(isDark));
-  //   }, [isDark]);
-
   return (
     <div className="navbar bg-primary text-primary-content">
       <div className="flex-1">
@@ -18,10 +11,7 @@ function Nav() {
         <label className="cursor-pointer grid place-items-center">
           <input
             type="checkbox"
-            value="cupcake"
-            // checked={isDark}
-            // defaultValue={isDark}
-            // onChange={() => setIsDark(!isDark)}
+            value="emerald"
             className="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
           />
           <svg

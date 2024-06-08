@@ -6,11 +6,54 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   plugins: [require("daisyui")],
+  // daisyui: {
+  //   themes: ["forest", "lemonade"],
+  // },
   daisyui: {
-    themes: ["cupcake", "dark"],
+    themes: [
+      {
+        forest: {
+          ...require("daisyui/src/theming/themes")["forest"],
+          primary: "#00FF00",
+        },
+        emerald: {
+          ...require("daisyui/src/theming/themes")["emerald"],
+        },
+      },
+    ],
   },
-  // darkMode: ["class", '[data-theme="dark"]'],
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

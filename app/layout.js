@@ -1,8 +1,11 @@
-import { Inter } from "next/font/google";
+import { Sofia_Sans_Semi_Condensed } from "next/font/google";
+import { Noto_Sans_Display } from "next/font/google";
+
 import "./globals.css";
 import Nav from "./Nav";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Sofia_Sans_Semi_Condensed({ subsets: ["latin"] });
+// const inter = Noto_Sans_Display({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -19,6 +22,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
-
 
