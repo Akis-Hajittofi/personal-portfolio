@@ -6,6 +6,7 @@ import mazeGame1 from "../public/screenshots/3d-maze-game-main.png";
 import yuniConnect1 from "../public/screenshots/yuni-connect-home.png";
 import Card from "./Card";
 import Divider from "./Divider";
+import { Mail } from "lucide-react";
 
 export default function Home() {
   const projects = [
@@ -44,7 +45,7 @@ export default function Home() {
     },
   ];
   return (
-    <main className="flex flex-col w-full sm:w-4/5 md:w-11/12 lg:w-[1000px] mx-auto  px-6  space-y-16">
+    <main className="flex flex-col w-full sm:w-4/5 md:w-11/12 lg:w-[1000px] mx-auto mb-36  px-6  space-y-16">
       <div className="w-full bg-base-100 text-base-content py-32 pb-0 sm:pb-16 ">
         <div className="w-full gap-5 flex flex-wrap justify-start ">
           <div className="w-36 h-36">
@@ -55,7 +56,7 @@ export default function Home() {
             />
           </div>
           <div className="">
-            <h1 className="text-7xl lg:text-8xl  font-[1000]">
+            <h1 className="text-7xl lg:text-8xl font-[1000]">
               {`Hello, I'm Phanakis`}
               <span className="text-primary">.</span>
             </h1>
@@ -93,12 +94,109 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <h2 className="text-7xl lg:text-8xl font-[1000] w-full text-center pb-16">
-        Contact<span className="text-primary">.</span>
-      </h2>
+
+      <div className="flex flex-col text-2xl w-3/4 self-center items-center space-y-5 text-center font-light">
+        <h2 className="text-7xl lg:text-8xl font-[1000] w-full text-center">
+          Contact<span className="text-primary">.</span>
+        </h2>
+        <p className="">
+          Seeking a new opportunity. Send me an email and let's connect! You can
+          also find me on{" "}
+          <a
+            href="https://www.linkedin.com/in/phanakis-hajittofi/"
+            target="_blank"
+          >
+            <span className="text-primary">LinkedIn</span>
+          </a>
+          .
+        </p>
+
+        <a href="mailto:phanakishajittofi@gmail.com">
+          <span className="inline-flex items-center font-semibold hover:text-primary hover:brightness-100 brightness-125">
+            <Mail className="mr-3" size={26} />
+            <span>phanakishajittofi@gmail.com</span>
+          </span>
+        </a>
+      </div>
     </main>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

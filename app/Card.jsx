@@ -53,7 +53,7 @@ function Card({ title, shortDecription, image, gitHub, website }) {
 
         <span className="text-xl font-light">
           {shortDecription}
-          <Link href={`/project/${title.split(" ").join("-").toLowerCase()}`}>
+          <Link href={`/projects/${title.split(" ").join("-").toLowerCase()}`}>
             <span className="p-0 text-xl font-semibold text-primary inline-flex items-center pl-2 border-b-2 border-transparent hover:border-primary hover:cursor-pointer">
               Learn More
               <ChevronRight />
