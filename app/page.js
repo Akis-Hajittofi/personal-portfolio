@@ -3,6 +3,7 @@ import profilePic from "../public/me.jpg";
 import quizApp1 from "../public/screenshots/Quiz-App-Home.png";
 import tms1 from "../public/screenshots/tms-tickets.png";
 import mazeGame1 from "../public/screenshots/3d-maze-game-main.png";
+import yuniConnect1 from "../public/screenshots/yuni-connect-home.png";
 import Card from "./Card";
 import Divider from "./Divider";
 
@@ -31,9 +32,10 @@ export default function Home() {
       title: "Yuni Connect",
       shortDescription:
         "Recruitment platform connecting students to employers.",
+      image: yuniConnect1,
     },
     {
-      id: 5,
+      id: 4,
       title: "3d Maze Game",
       shortDescription:
         "Maze game with 3d graphics made using React Three Fiber, featuring enemies, shooting, scores etc.",
@@ -77,14 +79,8 @@ export default function Home() {
         </div>
       </div>
       <div className="text-base-content w-fit ">
-        {/* <Divider text="Projects" /> */}
-        <div className="divider w-full divider-start divider-neutral text-5xl sm:text-6xl font-[1000] pb-16">
-          <p className="mr-2 ">
-            Projects
-            <span className="text-primary">.</span>
-          </p>
-        </div>
-        <div className=" flex flex-wrap gap-8 py-2 justify-center">
+        <Divider text="Projects" />
+        <div className="flex flex-wrap gap-8 py-2 justify-center">
           {projects.map((project) => (
             <Card
               title={project.title}
@@ -103,6 +99,16 @@ export default function Home() {
     </main>
   );
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
