@@ -16,9 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col bg-base-100`}>
+      <body className={`${inter.className} flex flex-col bg-base-100 `}>
         <Nav />
-        <div className="flex flex-row h-screen overflow-y-auto ml-16">
+        <div className="flex flex-row h-screen overflow-y-auto ml-16 pt-28 px-6">
           <SideNav />
           {children}
         </div>
@@ -26,4 +26,21 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

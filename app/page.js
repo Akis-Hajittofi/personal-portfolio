@@ -1,65 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import profilePic from "../public/me.jpg";
-import quizApp1 from "../public/screenshots/Quiz-App-Home.png";
-import tms1 from "../public/screenshots/tms-tickets.png";
-import mazeGame1 from "../public/screenshots/3d-maze-game-main.png";
-import yuniConnect1 from "../public/screenshots/yuni-connect-home.png";
 import Card from "./Card";
 import Divider from "./Divider";
 import { Mail } from "lucide-react";
 import Link from "next/link";
+import { projects, skills } from "./data";
 
 export default function Home() {
-  const projects = [
-    {
-      id: 1,
-      title: "Quiz App",
-      shortDescription:
-        "A fun way to put your knowledge to test featuring a typing quiz",
-      image: quizApp1,
-      gitHub: "https://github.com/Akis-Hajittofi/quiz-app",
-      website: "https://quiz-app-akis.netlify.app",
-    },
-    {
-      id: 2,
-      title: "Ticket Management System",
-      shortDescription:
-        "A system designed to efficiently handle support ticket requests within an organization. Built in Next JS.",
-      image: tms1,
-      gitHub: "https://github.com/Akis-Hajittofi/ticket-management-system",
-      website: "https://ticket-ms.vercel.app/tickets",
-    },
-    {
-      id: 3,
-      title: "Yuni Connect",
-      shortDescription:
-        "Recruitment platform connecting students to employers.",
-      image: yuniConnect1,
-    },
-    {
-      id: 4,
-      title: "3d Maze Game",
-      shortDescription:
-        "Maze game with 3d graphics made using React Three Fiber, featuring enemies, shooting, scores etc.",
-      image: mazeGame1,
-      website: "https://3d-maze-game.netlify.app/",
-    },
-  ];
-  const skills = [
-    "React",
-    "Next.js",
-    "Tailwind CSS",
-    "RTK Query",
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "Agile",
-    "Wireframing",
-  ];
   return (
-    <main className="flex flex-col w-full sm:w-4/5 md:w-11/12 lg:w-[1000px] mx-auto px-6 space-y-16">
-      <div className="w-full text-base-content py-40 pb-0 sm:pb-16 ">
+    <main className="flex flex-col w-full sm:w-4/5 md:w-11/12 lg:w-[1000px] mx-auto space-y-16">
+      <div className="w-full text-base-content pt-12 pb-0 sm:pb-16 ">
         <div className="w-full gap-5 flex flex-wrap justify-start ">
           <div className="w-36 h-36">
             <Image
@@ -151,7 +102,7 @@ export default function Home() {
         </div>
 
         <div
-          className="flex flex-col text-2xl w-full self-center items-center space-y-5 text-center font-light"
+          className="flex flex-col h-fit pb-14 text-2xl w-full items-center space-y-5 text-center font-light"
           id="contact"
         >
           <h2 className="text-7xl lg:text-8xl font-[1000] w-full text-center">
@@ -180,4 +131,18 @@ export default function Home() {
     </main>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
