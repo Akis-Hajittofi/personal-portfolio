@@ -36,9 +36,11 @@ function Nav() {
           </svg>
         </Link>
       </div>
-      <button className="btn btn-outline mx-2 w-32 btn-primary text-xl">
-        View CV
-      </button>
+      <Link href="https://flowcv.com/resume/ch5rb8wmsu">
+        <button className="btn btn-outline mx-2 w-32 btn-primary text-xl">
+          View CV
+        </button>
+      </Link>
     </div>
   );
 }
