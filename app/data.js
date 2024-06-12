@@ -32,12 +32,18 @@ export const projects = [
     id: 3,
     title: "Yuni Connect",
     shortDescription: "Recruitment platform connecting students to employers.",
-    description: "Recruitment platform connecting students to employers.",
+    description: `As a frontend developer on a four-person agile team, I played a key role in building Yuni Connect, a recruitment platform aimed at empowering university graduates with their job search. The idea behind this platform is to solve the common problem that graduates face: Uncertainty upon graduation or even whilst in studies, with what's the best steps to take and how to prepare well. Collaborating with the backend team that's using Python and Postgres has given me an excellent opportunity to deepen my understanding of data-fetching and caching methodologies, through the use of RTK Query, as well as broader data structures.
+
+One of my key contributions is an intuitive drag & drop board for easy application tracking. This itself proved very challenging because I faced a lot of problems with updating the state correctly and reflecting the changes in the database.
+
+Yuni Connect features more than just job listings. Currently, AI features are being worked on where students can prepare for interviews and a career path analyzer to provide more clarity in what paths are available for their degree and to learn about other paths if they wish to change.
+`,
     tools: [
       "React.js",
       "Daisy UI",
       "React Beautiful DnD",
       "RTK Query",
+      "Docker",
       "React Redux",
       "Formik",
       "Yup",
@@ -52,8 +58,18 @@ export const projects = [
     title: "3d Maze Game",
     shortDescription:
       "Maze game with 3d graphics made using React Three Fiber, featuring enemies, shooting, scores etc.",
-    description:
-      "Maze game with 3d graphics made using React Three Fiber, featuring enemies, shooting, scores etc.",
+    description: `Third-person maze game with 3d graphics featuring featuring moving enemies, HP, coins and a shooting weapon. The aim of the game is to find your way out of the maze without getting killed. The initial idea of this project started after working on my Quiz App. I wanted to create another fun experience but with the challenge of something completely different to what I've ever done before: graphics. After carrying out extensive research, it came to my surprise how easy it is to make a game in 3d in React and tools within Three.js.
+
+One of the biggest challenges to this project was the calculations, specifically the positioning in the 3d space. For example: Making a room in position x:0 and y:0 was very simple but when it came to replicating the same room in different locations with different sizes on the canvas, I had issues with doors and walls not being placed connected properly (e.g. some walls sticking out). It took a lot of diagaming to understand the logic properly and came up with some functions to calculate offsets.
+
+NOTE: If you try the live demo, please minimise the window to reduce lag.
+
+CONTROLS:
+Movement: Use the WASD keys to move your character.
+Shift: Press and hold the Shift key to run.
+Space: Press the Spacebar to jump.
+Mouse click: Click the mouse button to shoot.
+Q: Hold the Q key to switch to first-person view.`,
     tools: [
       "React Three/Fiber",
       "React Three/Rapier",

@@ -1,5 +1,6 @@
 import { Sofia_Sans_Semi_Condensed } from "next/font/google";
 import { Noto_Sans_Display } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 import Nav from "./Nav";
@@ -21,11 +22,14 @@ export default function RootLayout({ children }) {
         <div className="flex flex-row h-screen overflow-y-auto ml-16 pt-28 px-6">
           <SideNav />
           {children}
+          <Analytics />
         </div>
       </body>
     </html>
   );
 }
+
+
 
 
 
