@@ -4,7 +4,7 @@ import React from "react";
 
 function Nav() {
   return (
-    <div className="fixed p-4 w-[82%] sm:w-[90%] md:w-[92%]  lg:w-[94%] ml-16 navbar backdrop-blur-lg text-base-content">
+    <div className="sticky top-0 px-6 py-10  navbar backdrop-blur-lg text-base-content">
       <div className="flex-1 space-x-4">
         <Link
           className="fill-base-content hover:fill-primary"
@@ -37,7 +37,7 @@ function Nav() {
         </Link>
       </div>
       <Link href="https://flowcv.com/resume/ch5rb8wmsu">
-        <button className="btn btn-outline mx-2 w-32 btn-primary text-xl">
+        <button className="btn btn-outline w-32 btn-primary text-xl">
           View CV
         </button>
       </Link>

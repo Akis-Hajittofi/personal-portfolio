@@ -9,7 +9,7 @@ import { projects, skills } from "./data";
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full sm:w-4/5 md:w-11/12 lg:w-[1000px] mx-auto space-y-16">
+    <main className=" flex flex-col w-full h-full lg:w-[1000px] space-y-16">
       <div className="w-full text-base-content pt-12 pb-0 sm:pb-16 ">
         <div className="w-full gap-5 flex flex-wrap justify-start ">
           <div className="w-36 h-36">
@@ -115,8 +115,8 @@ export default function Home() {
           </p>
 
           <Link href="mailto:phanakishajittofi@gmail.com">
-            <span className="inline-flex items-center font-semibold hover:text-primary hover:brightness-100 brightness-125">
-              <Mail className="mr-3" size={26} />
+            <span className="text-xl sm:text-2xl inline-flex items-center font-semibold hover:text-primary hover:brightness-100 brightness-125">
+              <Mail className="mr-2" size={26} />
               <span>phanakishajittofi@gmail.com</span>
             </span>
           </Link>
@@ -125,6 +125,34 @@ export default function Home() {
     </main>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -10,7 +10,7 @@ function page({ params }) {
       params.project.split("-").join(" ").toLowerCase()
   );
   return (
-    <div className="scroll-mt-32 flex flex-col md:w-4/5 mx-auto items-center text-base-content w-full space-y-20 mb-10">
+    <div className="flex flex-col md:w-4/5 mx-auto text-base-content space-y-20 mb-10 scroll-mt-56">
       <h1 className="text-6xl md:text-7xl font-[1000] w-full text-center">
         {project.title}
         <span className="text-primary">.</span>
@@ -18,9 +18,9 @@ function page({ params }) {
       <div className="flex flex-wrap gap-10 md:gap-0 w-full space-y-5 md:space-y-0">
         <div className="md:w-8/12">
           <h2 className="text-2xl font-[850] mb-4">Overview</h2>
-          <p className="w-full text-xl font-light whitespace-pre-line">
+          <div className="w-full text-xl font-light whitespace-pre-line">
             {project?.description}
-          </p>
+          </div>
         </div>
 
         <div className="w-full min-w-[300px] md:w-4/12 md:pl-5 space-y-8">

@@ -9,9 +9,24 @@ export const projects = [
     title: "Quiz App",
     shortDescription:
       "A fun way to put your knowledge to test featuring a typing quiz",
-    description: `Quiz App is a fun way to put your knowledge to test featuring a typing quiz. Can you name all 50 US States? Or all gen 1 Pokémon? ...and more! I originally made this project at the end of my bootcamp course for my personal project after deciding to create a game and scrapping my initial idea of a wiki. In pursuit of creating fun experiences, later on I developed a 3D Maze Game.
-
-    Initially, the code was badly formatted and since then I've completely revamped it. My future ideas for this include adding more types of quizzes such as a drag & drop history timeline quiz (e.g. History of Nintendo consoles), multiple choice and 'this or that' along with leaderboards and other enhancements.`,
+    description: (
+      <div className="w-full text-xl font-light whitespace-pre-line">
+        {`Quiz App is a fun way to put your knowledge to test featuring a typing quiz. Can you name all 50 US States? Or all gen 1 Pokémon? ...and more! I originally made this project at the end of my bootcamp course for my personal project after deciding to create a game and scrapping my initial idea of a wiki. `}
+        <div>
+          {/* <iframe
+            className="rounded-2xl my-12 mx-auto w-full"
+            height="315"
+            src=""
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe> */}
+        </div>
+        {` In pursuit of creating fun experiences, later on I developed a 3D Maze Game. Initially, the code was badly formatted and since then I've completely revamped it. My future ideas for this include adding more types of quizzes such as a drag & drop history timeline quiz (e.g. History of Nintendo consoles), multiple choice and 'this or that' along with leaderboards and other enhancements.`}
+      </div>
+    ),
     tools: ["React.js", "Tailwind CSS", "Vite", "React Router", "Lucide Icons"],
     image: quizApp1,
     gitHub: "https://github.com/Akis-Hajittofi/quiz-app",
