@@ -36,7 +36,8 @@ export default function Home() {
           <p className="text-2xl font-light w-fit lg:p-0 lg:max-w-[800px]">
             I turn complexity into simplicity, harnessing the power of elegant
             design in React & Tailwind. I have experience from working in a
-            variety of projects. Also graduated from a Web-Dev bootcamp.
+            variety of professional projects. Also graduated from a Web-Dev
+            bootcamp.
           </p>
           <Link href="#contact">
             <button className="btn btn-wide btn-primary text-lg my-4">
@@ -52,23 +53,16 @@ export default function Home() {
         >
           <Divider text="About" />
           <div className="flex flex-wrap w-full text-xl font-light space-y-7 sm:space-y-0">
-            <div className="space-y-6 md:w-8/12">
-              <p>
-                I'm Phanakis, also known as <em>Akis</em>. I'm passionate about
-                creating intuitive and engaging interfaces that simplify complex
-                tasks. I leverage the power of React and Tailwind CSS to bring
-                designs to life, ensuring they are both visually appealing and
-                user-friendly.
-              </p>
-              <p>
-                After completing a comprehensive bootcamp a year ago, I have
-                recently re-immersed myself in web development, actively honing
-                my skills and expanding my knowledge. In the past two months, I
-                have gained valuable experience, particularly in RTK Query, and
-                going in-depth with all the tools that React offers. I'm eager
-                to kickstart my career in frontend development and am actively
-                seeking opportunities to collaborate with a talented team.
-              </p>
+            <div className="space-y-6 md:w-8/12 whitespace-pre-line">
+              I'm Phanakis, also known as <em>Akis. </em>{" "}
+              {`2+ years of React and Next.js experience gained through a coding bootcamp and professional projects. I'm passionate about creating intuitive and engaging interfaces that simplify complex tasks. I leverage the power of React and Tailwind CSS to bring designs to life, ensuring they are both visually appealing and user-friendly.
+
+                After completing the bootcamp a year ago, I have recently re-immersed myself in web development, actively honing my skills and expanding my knowledge. In the past two months alone, I have gained valuable experience, particularly in RTK Query and improving my knowledge of React's built-in hooks such as useContext for simple sharing of data and useRef for using DOM components.
+                
+                I'm eager to kickstart my career in frontend development with
+              ambitions of progressing towards becoming a purposeful senior
+              developer. Please feel free to browse my projects and connect with
+              me!`}
             </div>
             <div className="md:w-4/12 md:pl-5">
               <h2 className="text-2xl font-[850] mb-4">Skills</h2>
@@ -131,6 +125,12 @@ export default function Home() {
     </main>
   );
 }
+
+
+
+
+
+
 
 
 
