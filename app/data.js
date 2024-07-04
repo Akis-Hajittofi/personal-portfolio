@@ -48,13 +48,23 @@ export const projects = [
     title: "Yuni Connect",
     shortDescription:
       "Recruitment platform connecting students to employers. Agile collaboration with backend engineers (FastAPI/Postgres)",
-    description: `As a frontend developer on a four-person agile team, I played a key role in building Yuni Connect, a recruitment platform aimed at empowering university graduates with their job search. The idea behind this platform is to solve the common problem that graduates face: Uncertainty upon graduation or even whilst in studies, with what's the best steps to take and how to prepare well. Collaborating with the backend team that's using Python and Postgres has enabled me to deepen my understanding of data-fetching and caching methodologies, through the use of RTK Query, as well as broader data structures.
+    description: (
+      <div className="w-full text-xl font-light whitespace-pre-line">
+        {`As a frontend developer on a four-person agile team, I played a key role in building Yuni Connect, a recruitment platform aimed at empowering university graduates with their job search. The idea behind this platform is to solve the common problem that graduates face: Uncertainty upon graduation or even whilst in studies, with what's the best steps to take and how to prepare well. Collaborating with the backend team that's using Python and Postgres has enabled me to deepen my understanding of data-fetching and caching methodologies, through the use of RTK Query, as well as broader data structures.
 
-One of my key contributions is an intuitive drag & drop board for easy application tracking, making use of the React DnD library. This itself proved very challenging because I faced a lot of problems with updating the state correctly and synchronising the changes in the database. This happened because the items had positional index which was used to send to the database to save the order of the items. The algorithm was incorrectly updating the positional index, which on page reload will have a different order. Thus, the solution was to fix the for loop which was responsible for updating the positional index.
+One of my key contributions is an intuitive drag & drop board for easy application tracking, making use of the React DnD library. This itself proved very challenging because I faced a lot of problems with updating the state correctly and synchronising the changes in the database. This happened because the items had positional index which was used to send to the database to save the order of the items. The algorithm was incorrectly updating the positional index, which on page reload will have a different order. Thus, the solution was to fix the for loop which was responsible for updating the positional index.`}
+        <iframe
+          className="rounded-2xl my-10 mx-auto w-full"
+          height="350"
+          src="https://www.youtube.com/embed/chsXoTM2AHw?si=rG-9uYxvqzDqxP8D"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
 
-Soon AI features will be worked on where students can prepare for interviews and a career path analyzer to provide more clarity in what paths are available for their degree and to learn about other paths if they wish to change. The combination of these services makes Yuni Connect more than just a job listing site.
-
-`,
+        {`Soon AI features will be worked on where students can prepare for interviews and a career path analyzer to provide more clarity in what paths are available for their degree and to learn about other paths if they wish to change. The combination of these services makes Yuni Connect more than just a job listing site.`}
+      </div>
+    ),
     tools: [
       "React.js",
       "Daisy UI",
