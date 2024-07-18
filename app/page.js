@@ -6,6 +6,7 @@ import Divider from "./Divider";
 import { Mail } from "lucide-react";
 import Link from "next/link";
 import { projects, skills } from "./data";
+import RevealAnimation from "./RevealAnimation";
 
 export default function Home() {
   return (
@@ -20,10 +21,13 @@ export default function Home() {
             />
           </div>
           <div className="">
-            <h1 className="text-7xl lg:text-8xl font-[1000]">
-              {`Hello, I'm Phanakis`}
-              <span className="text-primary">.</span>
-            </h1>
+            <RevealAnimation>
+              <h1 className="text-7xl lg:text-8xl font-[1000]">
+                {`Hello, I'm Phanakis`}
+                <span className="text-primary">.</span>
+              </h1>
+            </RevealAnimation>
+
             <p className="text-5xl font-thin mb-4">
               I'm a{" "}
               <span className="text-primary font-extrabold ">
@@ -122,6 +126,7 @@ export default function Home() {
     </main>
   );
 }
+
 
 
 
