@@ -59,10 +59,7 @@ export default function Home() {
 
                 After completing the bootcamp a year ago, I have recently re-immersed myself in web development, actively honing my skills and expanding my knowledge. In the past two months alone, I have gained valuable experience, particularly in RTK Query and improving my knowledge of React's built-in hooks such as useContext for simple sharing of data and useRef for using DOM components.
                 
-                I'm eager to kickstart my career in frontend development with
-              ambitions of progressing towards becoming a purposeful senior
-              developer. Please feel free to browse my projects and connect with
-              me!`}
+                I'm eager to kickstart my career in frontend development with ambitions of progressing towards becoming a purposeful senior developer. Please feel free to browse my projects and connect with me!`}
             </div>
             <div className="md:w-4/12 md:pl-5">
               <h2 className="text-2xl font-[850] mb-4">Skills</h2>
@@ -125,6 +122,8 @@ export default function Home() {
     </main>
   );
 }
+
+
 
 
 
