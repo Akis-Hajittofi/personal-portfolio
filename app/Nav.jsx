@@ -4,7 +4,7 @@ import React from "react";
 
 function Nav() {
   return (
-    <div className="sticky top-0 px-6 py-10  navbar backdrop-blur-lg text-base-content">
+    <div className="z-50 sticky top-0 px-6 py-10  navbar backdrop-blur-lg text-base-content">
       <div className="flex-1 space-x-4">
         <Link
           className="fill-base-content hover:fill-primary"

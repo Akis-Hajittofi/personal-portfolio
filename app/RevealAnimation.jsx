@@ -19,7 +19,11 @@ function RevealAnimation({ children, width = "fit-content" }) {
   }, [isInView]);
 
   return (
-    <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
+    <div
+      ref={ref}
+      style={{ position: "relative", overflow: "hidden" }}
+      className={`w-${width}`}
+    >
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -46,7 +50,7 @@ function RevealAnimation({ children, width = "fit-content" }) {
           left: 0,
           right: 0,
           background: "oklch(var(--p))",
-          //   zIndex: 20,
+          zIndex: 20,
         }}
       />
     </div>

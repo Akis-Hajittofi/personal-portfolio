@@ -68,19 +68,39 @@ export default function Home() {
         >
           <Divider text="About" />
           <div className="flex flex-wrap w-full text-xl font-light space-y-7 sm:space-y-0">
-            <RevealAnimation>
-              <div className="space-y-6 md:w-8/12 whitespace-pre-line">
-                I'm Phanakis, also known as <em>Akis. </em>{" "}
-                {`2+ years of React and Next.js experience gained through a coding bootcamp and professional projects. I'm passionate about creating intuitive and engaging interfaces that simplify complex tasks. I leverage the power of React and Tailwind CSS to bring designs to life, ensuring they are both visually appealing and user-friendly.
+            <div className="md:w-8/12">
+              <RevealAnimation>
+                <div className=" flex flex-col space-y-7">
+                  <RevealAnimation>
+                    I'm Phanakis, also known as <em>Akis. </em> 2+ years of
+                    React and Next.js experience gained through a coding
+                    bootcamp and professional projects. I'm passionate about
+                    creating intuitive and engaging interfaces that simplify
+                    complex tasks. I leverage the power of React and Tailwind
+                    CSS to bring designs to life, ensuring they are both
+                    visually appealing and user-friendly.
+                  </RevealAnimation>
+                  <RevealAnimation>
+                    After completing the bootcamp a year ago, I have recently
+                    re-immersed myself in web development, actively honing my
+                    skills and expanding my knowledge. In the past two months
+                    alone, I have gained valuable experience, particularly in
+                    RTK Query and improving my knowledge of React's built-in
+                    hooks such as useContext for simple sharing of data and
+                    useRef for using DOM components.
+                  </RevealAnimation>
+                  <RevealAnimation>
+                    I'm eager to kickstart my career in frontend development
+                    with ambitions of progressing towards becoming a purposeful
+                    senior developer. Please feel free to browse my projects and
+                    connect with me!
+                  </RevealAnimation>
+                </div>
+              </RevealAnimation>
+            </div>
 
-                After completing the bootcamp a year ago, I have recently re-immersed myself in web development, actively honing my skills and expanding my knowledge. In the past two months alone, I have gained valuable experience, particularly in RTK Query and improving my knowledge of React's built-in hooks such as useContext for simple sharing of data and useRef for using DOM components.
-                
-                I'm eager to kickstart my career in frontend development with ambitions of progressing towards becoming a purposeful senior developer. Please feel free to browse my projects and connect with me!`}
-              </div>
-            </RevealAnimation>
-
-            <RevealAnimation>
-              <div className="md:w-4/12 md:pl-5">
+            <div className="md:w-4/12 md:pl-5">
+              <RevealAnimation>
                 <h2 className="text-2xl font-[850] mb-4">Skills</h2>
                 <div className="flex flex-wrap gap-2">
                   {skills.map((skill, index) => (
@@ -92,8 +112,8 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-              </div>
-            </RevealAnimation>
+              </RevealAnimation>
+            </div>
           </div>
         </div>
         <div id="projects" className="scroll-mt-32 text-base-content w-fit">
@@ -116,32 +136,49 @@ export default function Home() {
           className="flex flex-col h-fit pb-14 text-2xl w-full items-center space-y-5 text-center font-light"
           id="contact"
         >
-          <h2 className="text-7xl lg:text-8xl font-[1000] w-full text-center">
-            Contact<span className="text-primary">.</span>
-          </h2>
-          <p className="sm:w-2/3">
-            Seeking a new opportunity. Send me an email and let's connect! You
-            can also find me on{" "}
-            <Link
-              href="https://www.linkedin.com/in/phanakis-hajittofi/"
-              target="_blank"
-            >
-              <span className="text-primary">LinkedIn</span>
-            </Link>
-            .
-          </p>
+          <RevealAnimation>
+            <h2 className="text-7xl lg:text-8xl font-[1000] w-full text-center">
+              Contact<span className="text-primary">.</span>
+            </h2>
+          </RevealAnimation>
+          <div className="sm:w-2/3">
+            <RevealAnimation>
+              <p className="">
+                Seeking a new opportunity. Send me an email and let's connect!
+                You can also find me on{" "}
+                <Link
+                  href="https://www.linkedin.com/in/phanakis-hajittofi/"
+                  target="_blank"
+                >
+                  <span className="text-primary">LinkedIn</span>
+                </Link>
+                .
+              </p>
+            </RevealAnimation>
+          </div>
 
-          <Link href="mailto:phanakishajittofi@gmail.com">
-            <span className="text-xl sm:text-2xl inline-flex items-center font-semibold hover:text-primary hover:brightness-100 brightness-125">
-              <Mail className="mr-2" size={26} />
-              <span>phanakishajittofi@gmail.com</span>
-            </span>
-          </Link>
+          <RevealAnimation>
+            <Link href="mailto:phanakishajittofi@gmail.com">
+              <span className="text-xl sm:text-2xl inline-flex items-center font-semibold hover:text-primary hover:brightness-100 brightness-125">
+                <Mail className="mr-2" size={26} />
+                <span>phanakishajittofi@gmail.com</span>
+              </span>
+            </Link>
+          </RevealAnimation>
         </div>
       </div>
     </main>
   );
 }
+
+
+
+
+
+
+
+
+
 
 
 
