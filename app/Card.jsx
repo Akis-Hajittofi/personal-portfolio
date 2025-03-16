@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import RevealAnimation from "./RevealAnimation";
 
-function Card({ title, shortDecription, image, gitHub, website }) {
+function Card({ title, shortDecription, image, gitHub, website, techstack }) {
   return (
     <div className="flex flex-col w-full  md:w-[420px] ">
       <div className="">
@@ -52,6 +52,16 @@ function Card({ title, shortDecription, image, gitHub, website }) {
               )}
             </div>
           </div>
+
+          {techstack.slice(0, 4).map((item, index, arr) => (
+            <div
+              className="p-0 text-lg font-semibold text-primary inline-flex items-center"
+              key={index}
+            >
+              {item}
+              {index !== arr.length - 1 && <>&nbsp;-&nbsp;</>}
+            </div>
+          ))}
         </RevealAnimation>
         <RevealAnimation>
           <span className="text-xl font-light">

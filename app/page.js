@@ -35,7 +35,7 @@ export default function Home() {
               <p className="text-5xl font-thin mb-4">
                 I'm a{" "}
                 <span className="text-primary font-extrabold ">
-                  Frontend Developer
+                  Full Stack Developer
                 </span>
               </p>
             </RevealAnimation>
@@ -126,6 +126,7 @@ export default function Home() {
                 image={project.image}
                 gitHub={project.gitHub}
                 website={project.website}
+                techstack={project.tools}
                 key={project.id}
               />
             ))}
