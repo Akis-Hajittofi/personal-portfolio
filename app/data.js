@@ -51,7 +51,7 @@ export const projects = [
     description: `This project started from aiming to on develop something that is widely used across companies. The application is a system designed to efficiently handle support ticket requests within an organisation. Furthermore, I realised that I must start learning how to properly use component UI libraries. I chose Shadcn UI because of it's excellent integration with Tailwind CSS and its simple ready-to-use setup in my code.`,
     image: tms1,
     gitHub: "https://github.com/Akis-Hajittofi/ticket-management-system",
-    website: "https://tms.phanakishajittofi.dev/",
+    website: "https://tms.phanakishajittofi.dev/tickets",
   },
   {
     id: 3,
