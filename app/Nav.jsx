@@ -3,6 +3,30 @@ import Link from "next/link";
 import React from "react";
 
 function Nav() {
+  const api = process.env.NEXT_PUBLIC_API_URL;
+
+  const handleViewCv = async () => {
+    try {
+      const response = await fetch(`${api}/files/cv`); // Fetch from your backend's /files/cv endpoint
+      if (!response.ok) {
+        throw new Error(
+          `Failed to fetch CV: ${response.status} ${response.statusText}`
+        );
+      }
+      const data = await response.json(); // Assuming your backend returns JSON with a 'url' property
+      const cvUrl = data.url;
+
+      if (cvUrl) {
+        window.open(cvUrl, "_blank"); // Open in a new tab
+      } else {
+        console.error("CV URL not found in response.");
+        alert("CV URL not found. Please try again later."); // User-friendly message
+      }
+    } catch (error) {
+      console.error("Error fetching CV:", error);
+      alert(`Failed to fetch CV: ${error.message}`); // Show error to user
+    }
+  };
   return (
     <div className="z-50 sticky top-0 px-6 py-10  navbar backdrop-blur-lg text-base-content">
       <div className="flex-1 space-x-4">
@@ -36,11 +60,12 @@ function Nav() {
           </svg>
         </Link>
       </div>
-      <Link href="https://flowcv.com/resume/ch5rb8wmsu">
-        <button className="btn btn-outline w-32 btn-primary text-xl">
-          View CV
-        </button>
-      </Link>
+      <button
+        onClick={handleViewCv}
+        className="btn btn-outline w-32 btn-primary text-xl"
+      >
+        View CV
+      </button>
     </div>
   );
 }

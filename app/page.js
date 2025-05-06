@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
 import Image from "next/image";
 import profilePic from "../public/me.jpg";
 import Card from "./Card";
@@ -7,8 +8,32 @@ import { Mail } from "lucide-react";
 import Link from "next/link";
 import { projects, skills } from "./data";
 import RevealAnimation from "./RevealAnimation";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const api = process.env.NEXT_PUBLIC_API_URL;
+  const [homeInfo, setHomeInfo] = useState(null);
+
+  useEffect(() => {
+    const fetchHomeInfo = async () => {
+      try {
+        const response = await fetch(`${api}/home`);
+        if (!response.ok) {
+          throw new Error("Failed to home info");
+        }
+        const data = await response.json();
+        setHomeInfo(data);
+      } catch (error) {
+        console.error("Error fetching home info:", error);
+      }
+    };
+    fetchHomeInfo();
+  }, []);
+
+  if (!homeInfo) {
+    return <div>Data is loading...</div>;
+  }
+
   return (
     <main className=" flex flex-col w-full h-full lg:w-[1000px] space-y-16">
       <div className="w-full text-base-content pt-12 pb-0 sm:pb-16 ">
@@ -44,10 +69,7 @@ export default function Home() {
         <div className="flex flex-col">
           <RevealAnimation>
             <p className="text-2xl font-light w-fit lg:p-0 lg:max-w-[800px]">
-              I turn complexity into simplicity, harnessing the power of elegant
-              design in React & Tailwind. I have experience from working in a
-              variety of professional projects. Also graduated from a Web-Dev
-              bootcamp.
+              {homeInfo.bannerDescription}
             </p>
           </RevealAnimation>
 
@@ -71,30 +93,11 @@ export default function Home() {
             <div className="md:w-8/12">
               <RevealAnimation>
                 <div className=" flex flex-col space-y-7">
-                  <RevealAnimation>
-                    I'm Phanakis, also known as <em>Akis. </em> 2+ years of
-                    React and Next.js experience gained through a coding
-                    bootcamp and professional projects. I'm passionate about
-                    creating intuitive and engaging interfaces that simplify
-                    complex tasks. I leverage the power of React and Tailwind
-                    CSS to bring designs to life, ensuring they are both
-                    visually appealing and user-friendly.
-                  </RevealAnimation>
-                  <RevealAnimation>
-                    After completing the bootcamp a year ago, I have recently
-                    re-immersed myself in web development, actively honing my
-                    skills and expanding my knowledge. In the past two months
-                    alone, I have gained valuable experience, particularly in
-                    RTK Query and improving my knowledge of React's built-in
-                    hooks such as useContext for simple sharing of data and
-                    useRef for using DOM components.
-                  </RevealAnimation>
-                  <RevealAnimation>
-                    I'm eager to kickstart my career in frontend development
-                    with ambitions of progressing towards becoming a purposeful
-                    senior developer. Please feel free to browse my projects and
-                    connect with me!
-                  </RevealAnimation>
+                  {homeInfo?.aboutInfo.split("\n\n").map((para, index) => (
+                    <RevealAnimation key={index}>
+                      <p>{para}</p>
+                    </RevealAnimation>
+                  ))}
                 </div>
               </RevealAnimation>
             </div>
