@@ -11,20 +11,17 @@ export const projects = [
       "A fun way to put your knowledge to test featuring a typing quiz",
     description: (
       <div className="w-full text-xl font-light whitespace-pre-line">
-        {`Quiz App is a fun way to put your knowledge to test featuring a typing quiz. Can you name all 50 US States? Or all gen 1 Pokémon? ...and more! I originally made this project at the end of my bootcamp course for my personal project after deciding to create a game and scrapping my initial idea of a wiki. `}
-        <div>
-          {/* <iframe
-            className="rounded-2xl my-12 mx-auto w-full"
-            height="315"
-            src=""
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe> */}
-        </div>
-        {` In pursuit of creating fun experiences, later on I developed a 3D Maze Game. Initially, the code was badly formatted and since then I've completely revamped it. My future ideas for this include adding more types of quizzes such as a drag & drop history timeline quiz (e.g. History of Nintendo consoles), multiple choice and 'this or that' along with leaderboards and other enhancements.`}
+        <p>Quiz App is a fun way to put your knowledge to test featuring a typing quiz. Can you name all 50 US States? Or all gen 1 Pokémon? ...and more!</p>
+         <h2 className="text-2xl font-[850] mt-10 mb-3">From Static Site to Fullstack Application</h2>
+        {`Originally this application was static, only using frontend technologies. Then, I self-taught myself TypeScript and MySQL, choosing this project as a learning playground, realizing the potential with paginated leaderboards and user accounts. To meet industry standards and challenge myself, I hosted the MySQL database on AWS EC2. Tackling the AWS ecosystem proved to be a significant challenge, involving many configurations but ultimately, incredibly rewarding and a key learning experience.`}
+        <h2 className="text-2xl font-[850] mt-10 mb-3">User flow & Authentication</h2>
+        {`Upon entering the homepage, the user is shown all the available quizzes. If they are not signed in (checked via a function from Clerk Authentication), a modal appears displaying the benefits such as participating in the leaderboards; with an option to play as a guest to make it easy to play a quiz. The Sign In / Sign Up form is conveniently provided by Clerk's prebuilt components, and once the sign up or sign in is complete, the user is taken to the relevant URL.`}
+        <h2 className="text-2xl font-[850] mt-10 mb-3">Gameplay & Score Submission</h2>
+        {`A quiz ends when the timer runs out, the user ends the game, or the maximum score is reached.  On the results screen, the user can see what they got correct and what they missed. If the user is logged in, the score is automatically submitted if their score is higher than their top score which is checked in the controller of my Express application by fist sending an SQL command to check if the user's new score is higher than the top score which if this passes, the database is queried again to update the score.`}
+        <h2 className="text-2xl font-[850] mt-10 mb-3">Leaderboards & Paginaion</h2>
+        {`The leaderboards will display the initial page of results retrieved from the database. Users can navigate through subsequent pages using numbered links or a 'show more' button. Selecting 'show more' triggers an API request for the next set of results, which are then appended to the current view, and the pagination state updates dynamically, for a smooth browsing experience.`}
+        <h2 className="text-2xl font-[850] mt-10 mb-3">Tech Stack & Hosting</h2>
+        {`Behind the scenes, the backend is organized with a clear separation of concerns: Express routes handle incoming requests, while controllers manage logic like score validation and database interactions. Middleware is used to enforce authentication where needed. The API, hosted on Railway, is designed to support efficient pagination and score submission, with SQL queries tailored to update user data only when necessary. The backend is written in TypeScript and connects to a MySQL database hosted on AWS EC2. The frontend, built with React and deployed on Vercel, communicates with the backend via RESTful endpoints.`}
       </div>
     ),
     tools: [
@@ -35,6 +32,7 @@ export const projects = [
       "React.js",
       "Tailwind",
       "Vite",
+      "Clerk Auth",
       "React Router",
       "Lucide Icons",
     ],

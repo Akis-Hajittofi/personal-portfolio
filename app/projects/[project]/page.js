@@ -10,14 +10,13 @@ function page({ params }) {
       params.project.split("-").join(" ").toLowerCase()
   );
   return (
-    <div className="flex flex-col md:w-4/5 mx-auto text-base-content space-y-20 mb-10 scroll-mt-56">
+    <div className="flex flex-col sm:w-4/5 mx-auto text-base-content space-y-20 mb-10 scroll-mt-56">
       <h1 className="text-6xl md:text-7xl font-[1000] w-full text-center">
         {project.title}
         <span className="text-primary">.</span>
       </h1>
       <div className="flex flex-wrap gap-10 md:gap-0 w-full space-y-5 md:space-y-0">
         <div className="md:w-8/12">
-          <h2 className="text-2xl font-[850] mb-4">Overview</h2>
           <div className="w-full text-xl font-light whitespace-pre-line">
             {project?.description}
           </div>
@@ -25,7 +24,7 @@ function page({ params }) {
 
         <div className="w-full min-w-[300px] md:w-4/12 md:pl-5 space-y-8">
           <div>
-            <h2 className="text-2xl font-[850] mb-4">Technologies</h2>
+            <h2 className="text-2xl font-[850] mb-4 mt-5">Technologies</h2>
             <div className="flex flex-wrap gap-2">
               {project.tools?.map((skill, index) => (
                 <div
