@@ -2,7 +2,7 @@ import quizApp1 from "../public/screenshots/Quiz-App-Home.png";
 import tms1 from "../public/screenshots/tms-tickets.png";
 import mazeGame1 from "../public/screenshots/3d-maze-game-main.png";
 import yuniConnect1 from "../public/screenshots/yuni-connect-home.png";
-import AlMumininCentral from "../public/screenshots/Al-Muminin-Central.png";
+import alMumininCentral from "../public/screenshots/al-muminin-central.png";
 
 export const projects = [
   {
@@ -70,7 +70,7 @@ export const projects = [
       "Tailwind",
       "Vite",
     ],
-    image: AlMumininCentral,
+    image: alMumininCentral,
     website: "https://www.almuminincentral.com",
   },
   {
