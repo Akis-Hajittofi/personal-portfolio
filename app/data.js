@@ -2,6 +2,7 @@ import quizApp1 from "../public/screenshots/Quiz-App-Home.png";
 import tms1 from "../public/screenshots/tms-tickets.png";
 import mazeGame1 from "../public/screenshots/3d-maze-game-main.png";
 import yuniConnect1 from "../public/screenshots/yuni-connect-home.png";
+import AlMumininCentral from "../public/screenshots/Al-Muminin-Central.png";
 
 export const projects = [
   {
@@ -42,6 +43,38 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Al Muminin Central",
+    shortDescription:
+      "Site for the youth project in my local community, with custom event booking system",
+    description: (
+      <div className="w-full text-xl font-light whitespace-pre-line">
+        <p>A website designed to facilitate community engagement and ticketing for the youth project in my local area.</p>
+         <h2 className="text-2xl font-[850] mt-10 mb-3">Origins</h2>
+        {`Content coming soon.`}
+        <h2 className="text-2xl font-[850] mt-10 mb-3">Stripe integration</h2>
+        {`Content coming soon.`}
+        <h2 className="text-2xl font-[850] mt-10 mb-3">Firebase integration</h2>
+        {`Content coming soon.`}
+        {/* <h2 className="text-2xl font-[850] mt-10 mb-3">Leaderboards & Paginaion</h2>
+        {`The leaderboards will display the initial page of results retrieved from the database. Users can navigate through subsequent pages using numbered links or a 'show more' button. Selecting 'show more' triggers an API request for the next set of results, which are then appended to the current view, and the pagination state updates dynamically, for a smooth browsing experience.`}
+        <h2 className="text-2xl font-[850] mt-10 mb-3">Tech Stack & Hosting</h2>
+        {`Behind the scenes, the backend is organized with a clear separation of concerns: Express routes handle incoming requests, while controllers manage logic like score validation and database interactions. Middleware is used to enforce authentication where needed. The API, hosted on Railway, is designed to support efficient pagination and score submission, with SQL queries tailored to update user data only when necessary. The backend is written in TypeScript and connects to a MySQL database hosted on AWS EC2. The frontend, built with React and deployed on Vercel, communicates with the backend via RESTful endpoints.`} */}
+      </div>
+    ),
+    tools: [
+      "Firebase Firestore/storage/auth",
+      "Stripe",
+      "Vercel serverless API",
+      "TypeScript",
+      "React.js",
+      "Tailwind",
+      "Vite",
+    ],
+    image: AlMumininCentral,
+    website: "https://www.almuminincentral.com",
+  },
+  {
+    id: 3,
     title: "Ticket Management System",
     shortDescription:
       "A system designed to efficiently handle support ticket requests within an organization. Built in Next JS.",
@@ -52,7 +85,7 @@ export const projects = [
     website: "https://tms.phanakishajittofi.dev/tickets",
   },
   {
-    id: 3,
+    id: 4,
     title: "Yuni Connect",
     shortDescription:
       "Recruitment platform connecting students to employers. Agile collaboration with backend engineers (FastAPI/Postgres)",
@@ -90,7 +123,7 @@ One of my key contributions is an intuitive drag & drop board for easy applicati
     website: "https://yuniconnect.com",
   },
   {
-    id: 4,
+    id: 5,
     title: "3d Maze Game",
     shortDescription:
       "Maze game with 3d graphics made using React Three Fiber, featuring enemies, shooting, scores etc.",
